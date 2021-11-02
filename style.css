@@ -5,10 +5,43 @@
     box-sizing: border-box;
 }
 
-.dino {
+.dino{
     width: 60px;
     height: 60px;
-    background-color: green;
     position: absolute;
     bottom: 0;
+    background-image: url(/img/dino.png);
+}
+
+.cactus{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(/img/cactus.png);
+}
+
+.game-over{
+    text-align: center;
+    margin-top: 50px;
+    font-family: arial;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 7000%;
+    }
+    to {
+        background-position: 0
+    }
+}
+
+.background {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(/img/background.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
 }
